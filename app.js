@@ -4,9 +4,8 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
 const details = require("./details.json");
-
 const app = express();
-app.use(cors({ origin: "*" }));
+app.use(cors());
 app.use(bodyParser.json());
 
 app.listen(3000, () => {
